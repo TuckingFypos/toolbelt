@@ -7,6 +7,10 @@ CCard Checker
 
 > Takes an integer value and checks to see if it could be a valid Credit Card number. 
 
+Domain to IP Resolver
+
+> Takes a domain name (ex:google.com) and resolves its IP address.
+
 ## Meta
 
 James D. – [@TuckingFypos](https://twitter.com/tuckingfypos)
