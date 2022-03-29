@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 __author__= "TuckingFypos"
-__version__= "0.0.1"
+__version__= "0.0.2"
 
 import socket
 import subprocess
@@ -12,14 +12,9 @@ def main():
     localhost = socket.gethostname()
     print("IP will be resolved from " + localhost)
     targetHost = input("Enter a target domain: ")
-    try:
-        targetServer = socket.gethostbyname(targetHost)
-        print("The domain " + targetHost + " is hosted at " + targetServer)
-        sys.stdout.write(targetServer)
-
-    except KeyboardInterrupt:
-        print("You pressed Ctrl+C")
-        sys.exit()
+    targetServer = socket.gethostbyname(targetHost)
+    print("The domain " + targetHost + " is hosted at " + targetServer)
+    sys.stdout.write(targetServer)
 
 if __name__=="__main__":
     main()
